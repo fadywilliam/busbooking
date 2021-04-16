@@ -7,8 +7,12 @@ a fleet-management system (bus-booking system)
 - cp .env.example .env
 # In windows
 - copy .env.example .env
-# Create database in phpmyadmin and config 
-# - DB_HOST=localhost && DB_USERNAME && DB_PASSWORD in .env file in root
+# Create DB in phpmyadmin and config it in .env
+- DB_HOST=localhost
+- DB_USERNAME=root
+- DB_PASSWORD=
+
+# then
 - composer install
 - php artisan key:generate
 - php artisan migrate:fresh --seed
