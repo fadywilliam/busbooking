@@ -24,8 +24,8 @@ class BookingsController extends Controller
     }
     public function store(Request $request){
         $customMessages = [
-            'from.required'=>'Trip from field is required',
-            'to.required'=>'Trip to field is required',
+            'from.required'=>'Trip start field is required',
+            'to.required'=>'Trip end field is required',
             'seat_id.required'=>'Seat # field is required'
             ];
         $validator = Validator::make($request->all(), [
